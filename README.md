@@ -1,10 +1,11 @@
-# Project Euler
-Project Euler problems solved in Python
+# Python Problems
+Various code problems solved in Python
 
- ## Subtitle
+ ## Types
 
 
 ```python
-print("hello world")
+print("Project Euler")
+print("FizzBuzz")
 ```
 
