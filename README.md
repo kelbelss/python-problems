@@ -5,7 +5,7 @@ Various code problems solved in Python
 
 
 ```python
-print("Project Euler")
-print("FizzBuzz")
+Project Euler
+FizzBuzz
 ```
 
