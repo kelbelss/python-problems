@@ -11,7 +11,7 @@ def factors(number):
     # find all factors of number and add to list above
     if number > 1:
         for i in range(1,int(math.sqrt(number))+1):
-            if number % 2 != 0 and number % i == 0:
+            if number % i == 0:
                 allFactors.append(i)
 
 factors(600851475143)
