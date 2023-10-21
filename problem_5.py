@@ -9,4 +9,9 @@ for i in range(1,240000000):
         numbers.append(i)
 
 print(numbers)        
-       
+
+
+# import math
+
+# result = math.lcm(*range(1, 21))
+# print(result)
