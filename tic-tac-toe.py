@@ -16,103 +16,46 @@ grid = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 # user2 = X
 
 def turns1(_grid):
-    for i in range(0,8):
-        if i != "X" or i != "0":
-            _grid[chosenGridBlockIndex] = "0"
+
+    while True:
+        user1 = input("User 1: ")
+        place = int(user1) - 1
+        if (_grid[place] != "X" and _grid[place] != "O"):
+            _grid[place] = "O"
+            return True
+        
+
+def turns2(_grid):
+    while True:
+        user2 = input("User 2: ")
+        place = int(user2) - 1
+        if (_grid[place] != "X" and _grid[place] != "O"):
+            _grid[place] = "X"
+            return True
         
 
 
-def turns2(_grid):
-    for i in range(0,8):
-        if i != "X" or _grid != "0":
-            _grid[chosenGridBlockIndex] = "X"
+round = 0
 
+while round <= 8:
+   
+    turns1(grid)
+    round += 1
 
-# def takeTurns():
+    print(grid[0], grid[1], grid[2])
+    print(grid[3], grid[4], grid[5])
+    print(grid[6], grid[7], grid[8])
 
+    if round == 9:
+        break
 
+    turns2(grid)
+    round += 1
 
+    print(grid[0], grid[1], grid[2])
+    print(grid[3], grid[4], grid[5])
+    print(grid[6], grid[7], grid[8])
 
-user1 = input("User 1: ")
-chosenGridBlockIndex = int(user1) - 1
-
-turns1(grid)
-
-print(grid[0], grid[1], grid[2])
-print(grid[3], grid[4], grid[5])
-print(grid[6], grid[7], grid[8])
-
-user2 = input("User 2: ")
-chosenGridBlockIndex = int(user2) - 1
-
-turns2(grid)
-
-print(grid[0], grid[1], grid[2])
-print(grid[3], grid[4], grid[5])
-print(grid[6], grid[7], grid[8])
-
-user1 = input("User 1: ")
-chosenGridBlockIndex = int(user1) - 1
-
-turns1(grid)
-
-print(grid[0], grid[1], grid[2])
-print(grid[3], grid[4], grid[5])
-print(grid[6], grid[7], grid[8])
-
-user2 = input("User 2: ")
-chosenGridBlockIndex = int(user2) - 1
-
-turns2(grid)
-
-print(grid[0], grid[1], grid[2])
-print(grid[3], grid[4], grid[5])
-print(grid[6], grid[7], grid[8])
-
-user1 = input("User 1: ")
-chosenGridBlockIndex = int(user1) - 1
-
-turns1(grid)
-
-print(grid[0], grid[1], grid[2])
-print(grid[3], grid[4], grid[5])
-print(grid[6], grid[7], grid[8])
-
-user2 = input("User 2: ")
-chosenGridBlockIndex = int(user2) - 1
-
-turns2(grid)
-
-print(grid[0], grid[1], grid[2])
-print(grid[3], grid[4], grid[5])
-print(grid[6], grid[7], grid[8])
-
-user1 = input("User 1: ")
-chosenGridBlockIndex = int(user1) - 1
-
-turns1(grid)
-
-print(grid[0], grid[1], grid[2])
-print(grid[3], grid[4], grid[5])
-print(grid[6], grid[7], grid[8])
-
-user2 = input("User 2: ")
-chosenGridBlockIndex = int(user2) - 1
-
-turns2(grid)
-
-print(grid[0], grid[1], grid[2])
-print(grid[3], grid[4], grid[5])
-print(grid[6], grid[7], grid[8])
-
-user1 = input("User 1: ")
-chosenGridBlockIndex = int(user1) - 1
-
-turns1(grid)
-
-print(grid[0], grid[1], grid[2])
-print(grid[3], grid[4], grid[5])
-print(grid[6], grid[7], grid[8])
 
 
 
