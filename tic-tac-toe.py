@@ -1,41 +1,130 @@
 print("TIC-TAC-TOE")
 
+grid = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-blocks = [[], [], [], [], [], [], [], [], []]
+# print(grid[0], grid[1], grid[2])
+# print(grid[3], grid[4], grid[5])
+# print(grid[6], grid[7], grid[8])
 
+# blocks = [[], [], [], [], [], [], [], [], []]
 
-
-# def printGrid (blocks):
-    
-print(blocks[0], blocks[1], blocks[2])
-print(blocks[3], blocks[4], blocks[5])
-print(blocks[6], blocks[7], blocks[8])
-
+# print(blocks[0], blocks[1], blocks[2])
+# print(blocks[3], blocks[4], blocks[5])
+# print(blocks[6], blocks[7], blocks[8])
 
 # user1 = 0
 # user2 = X
 
+def turns1(_grid):
+    for i in range(0,8):
+        if i != "X" or i != "0":
+            _grid[chosenGridBlockIndex] = "0"
+        
+
+
+def turns2(_grid):
+    for i in range(0,8):
+        if i != "X" or _grid != "0":
+            _grid[chosenGridBlockIndex] = "X"
+
+
+# def takeTurns():
+
+
+
+
 user1 = input("User 1: ")
-print(user1)
+chosenGridBlockIndex = int(user1) - 1
 
-if user1 == "1":
-    block1 = [0]
-elif user1 == "2":
-    block2 = [0]
-elif user1 == "3":
-    block3 = [0]
-elif user1 == "4":
-    block4 = [0]
-elif user1 == "5":
-    block5 = [0]
-elif user1 == "6":
-    block6 = [0]
-elif user1 == "7":
-    block7 = [0]
-elif user1 == "8":
-    block8 = [0]
-elif user1 == "9":
-    block9 = [0]
+turns1(grid)
 
+print(grid[0], grid[1], grid[2])
+print(grid[3], grid[4], grid[5])
+print(grid[6], grid[7], grid[8])
+
+user2 = input("User 2: ")
+chosenGridBlockIndex = int(user2) - 1
+
+turns2(grid)
+
+print(grid[0], grid[1], grid[2])
+print(grid[3], grid[4], grid[5])
+print(grid[6], grid[7], grid[8])
+
+user1 = input("User 1: ")
+chosenGridBlockIndex = int(user1) - 1
+
+turns1(grid)
+
+print(grid[0], grid[1], grid[2])
+print(grid[3], grid[4], grid[5])
+print(grid[6], grid[7], grid[8])
+
+user2 = input("User 2: ")
+chosenGridBlockIndex = int(user2) - 1
+
+turns2(grid)
+
+print(grid[0], grid[1], grid[2])
+print(grid[3], grid[4], grid[5])
+print(grid[6], grid[7], grid[8])
+
+user1 = input("User 1: ")
+chosenGridBlockIndex = int(user1) - 1
+
+turns1(grid)
+
+print(grid[0], grid[1], grid[2])
+print(grid[3], grid[4], grid[5])
+print(grid[6], grid[7], grid[8])
+
+user2 = input("User 2: ")
+chosenGridBlockIndex = int(user2) - 1
+
+turns2(grid)
+
+print(grid[0], grid[1], grid[2])
+print(grid[3], grid[4], grid[5])
+print(grid[6], grid[7], grid[8])
+
+user1 = input("User 1: ")
+chosenGridBlockIndex = int(user1) - 1
+
+turns1(grid)
+
+print(grid[0], grid[1], grid[2])
+print(grid[3], grid[4], grid[5])
+print(grid[6], grid[7], grid[8])
+
+user2 = input("User 2: ")
+chosenGridBlockIndex = int(user2) - 1
+
+turns2(grid)
+
+print(grid[0], grid[1], grid[2])
+print(grid[3], grid[4], grid[5])
+print(grid[6], grid[7], grid[8])
+
+user1 = input("User 1: ")
+chosenGridBlockIndex = int(user1) - 1
+
+turns1(grid)
+
+print(grid[0], grid[1], grid[2])
+print(grid[3], grid[4], grid[5])
+print(grid[6], grid[7], grid[8])
+
+
+
+
+
+
+# TODO: 
+
+# winner = 3 in a row (1, 2, 3) (1, 4, 7) (1, 5, 9) (2, 5, 8) (3, 6, 9) (3, 5, 7) (4, 5, 6) (7, 8, 9)
+# no winner = no 3 in a row
+
+# each player takes turns
+# cannot play where other already has
 
 
