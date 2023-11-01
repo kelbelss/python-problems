@@ -7,5 +7,6 @@ Various code problems solved in Python
 ```python
 Project Euler
 FizzBuzz
+Tic-Tac-Toe
 ```
 
