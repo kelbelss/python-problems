@@ -8,5 +8,6 @@ Various code problems solved in Python
 Project Euler
 FizzBuzz
 Tic-Tac-Toe
+Rock-Paper-Scissors
 ```
 
