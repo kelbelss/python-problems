@@ -2,11 +2,6 @@ print("\033[0;34m" "TIC-TAC-TOE" "\033[0;m")
 
 grid = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-# purple = "\033[0;35m"
-# cyan = "\033[0;36m"
-# blue = "\033[0;34m"
-# back = "\033[0;m"
-
 O = ("\033[0;36m" "O" "\033[0;m") 
 X = ("\033[0;35m" "X" "\033[0;m")
 
@@ -81,3 +76,7 @@ while round <= 8:
 # cannot play where other already has
 
 
+# purple = "\033[0;35m"
+# cyan = "\033[0;36m"
+# blue = "\033[0;34m"
+# back = "\033[0;m"
