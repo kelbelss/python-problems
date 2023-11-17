@@ -1,7 +1,7 @@
 import random
 import os, time
 
-print("⚔️ BATTLE TIME ⚔️")
+print("⚔️ BATTLE TIME -> CHARACTERS⚔️")
 
 print()
 time.sleep(2)
@@ -53,15 +53,83 @@ os.system("clear")
 
 round = 1
 winner = None
-  
+
+print("The Battle Begins!")
+print()
+
+time.sleep(2)
+os.system("clear")
 
 while True:
   
+  print("Round:", round)
+  print()
+  print("Starting Health:")
+  print()
+  print(name1, "has", healthOne, "health")
+  print(name2, "has", healthTwo, "health")
+  print()
+
+  time.sleep(4)
+  os.system("clear")
+
   print("⚔️ BATTLE TIME ⚔️")
   print()
-  print("The Battle Begins!")
   
   dice1 = roll(6)
   dice2 = roll(6)
+  print(name1, "rolled", dice1)
+  print(name2, "rolled", dice2)
+  
+  time.sleep(4)
+  print()
 
-  different = round(strengthOne - strengthTwo) + 1
+  difference = abs(strengthOne - strengthTwo) + 1
+  
+  if dice1 > dice2:
+    healthTwo -= difference
+    if round == 1:
+      print(name1, "wins the first round")
+    else:
+      print(name1, "wins round", round)
+  elif dice2 > dice1:
+    healthOne -= difference
+    if round == 1:
+      print(name2, "wins the first round")
+    else:
+      print(name2, "wins round", round)
+  else:
+    print("It's a draw!")
+
+
+  print()
+  time.sleep(4)
+
+  print(name1, "has", healthOne, "health")
+  print(name2, "has", healthTwo, "health")
+  print()
+  
+  time.sleep(4)
+
+  if healthOne <= 0:
+    print(name1, "has died")
+    winner = name2
+    break
+  elif healthTwo <= 0:
+    print(name2, "has died")
+    winner = name1
+    break
+  else:
+    print("Both still standing! Next round...")
+    round += 1
+    time.sleep(4)
+    os.system("clear")
+  
+  time.sleep(4)
+
+time.sleep(4)
+os.system("clear")
+
+print("⚔️ BATTLE TIME FINAL ⚔️")
+print()
+print(winner, "has won in", round, "rounds!")
