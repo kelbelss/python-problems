@@ -1,18 +1,10 @@
 import random
 import os, time
 
-print("Character Builder")
+print("⚔️ BATTLE TIME ⚔️")
 
 print()
 time.sleep(2)
-
-again = "yes"
-
-
-def character():
-  name = input("Name your Legend: ")
-  type = input("Character Type (Human, Elf, Wizard, Orc): ")
-  print(name, "the", type)
 
 
 def roll(sides):
@@ -21,27 +13,55 @@ def roll(sides):
 
 
 def health():
-  roll6 = roll(6)
-  roll8 = roll(8)
-  health = (roll6 * roll8) / 2 + 10
-  roundHealth = round(health)
-  # return health
-  print("HEALTH: ", roundHealth)
+  health = round((roll(6) * roll(8)) / 2) + 10
+  print("HEALTH: ", health)
+  return health
 
 
 def strength():
-  roll6 = roll(6)
-  roll8 = roll(8)
-  strength = round((roll6 * roll8) / 2 + 12)
-  # return strength
+  strength = round((roll(6) * roll(8)) / 2) + 12
   print("STRENGTH: ", strength)
+  return strength
 
 
-while again == "yes":
-  character()
-  time.sleep(2)
-  health()
-  strength()
-  time.sleep(4)
-  os.system("clear")
-  again = input("Create a new character? ")
+# character1():
+name1 = input("Name your Legend: ")
+type1 = input("Character Type (Human, Elf, Wizard, Orc): ")
+time.sleep(1)
+print()
+print("Player 1: ", name1, "the", type1)
+healthOne = health()
+strengthOne = strength()
+  
+time.sleep(4)
+os.system("clear")
+print("Who are they battling? ")
+print()
+
+# character2():
+name2 = input("Name your Legend: ")
+type2 = input("Character Type (Human, Elf, Wizard, Orc): ")
+time.sleep(1)
+print()
+print("Player 2: ", name2, "the", type2)
+healthTwo = health()
+strengthTwo = strength()
+  
+time.sleep(4)
+os.system("clear")
+
+
+round = 1
+winner = None
+  
+
+while True:
+  
+  print("⚔️ BATTLE TIME ⚔️")
+  print()
+  print("The Battle Begins!")
+  
+  dice1 = roll(6)
+  dice2 = roll(6)
+
+  different = round(strengthOne - strengthTwo) + 1
