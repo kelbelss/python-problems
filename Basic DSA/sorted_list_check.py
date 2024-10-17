@@ -1,0 +1,1 @@
+# Write a function to check whether a list of numbers is sorted in ascending order.

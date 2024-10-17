@@ -1,0 +1,1 @@
+# Write a function that returns the index of a given element in a list. If the element is not found, return -1. (This can introduce linear search.)

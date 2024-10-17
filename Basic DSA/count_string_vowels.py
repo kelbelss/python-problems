@@ -1,0 +1,1 @@
+# Write a function to count the number of vowels (a, e, i, o, u) in a given string.
