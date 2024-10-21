@@ -10,13 +10,12 @@ def count_vowels(input):
 
     return vowel_count 
 
-input = "sunflower"
 
 def run_tests():
     assert count_vowels("dougas") == 3
     assert count_vowels("flower") == 2
     assert count_vowels("") == 0
-    assert count_vowels("hello") == 2
+    assert count_vowels("hello benjamin") == 5
     print("All tests passed!")
 
 run_tests()
