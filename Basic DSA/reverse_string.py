@@ -2,4 +2,4 @@
 
 word = "hello"
 
-print(word[4:-1]);
+print(word[::-1]);
