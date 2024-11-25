@@ -1,10 +1,5 @@
 # Given a list of integers, write a function to return the sum of all even numbers.
 
-# define input
-# write function to pull out even numbers
-# add even numbers together
-# add test
-
 def sum_even_numbers(input):
 
     even = []
